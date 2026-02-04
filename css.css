@@ -1,0 +1,15 @@
+/* 1. ページ全体で見出し用のカウンターをリセット */
+body {
+  counter-reset: my-h1-counter;
+}
+
+h1::before {
+  counter-increment: my-h1-counter;        /* カウントを+1 */
+  content: counter(my-h1-counter) ". ";    /* 「1. 」のように表示 */
+  color: #333;                             /* 数字だけの装飾も可能 */
+  margin-right: 10px;
+}
+
+h1 {
+  color: blue;
+}

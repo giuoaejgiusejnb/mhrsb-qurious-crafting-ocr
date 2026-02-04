@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='UTF-8'>
+    <title>MHRSB練成画像認識やり方解説</title>
+      <link rel="stylesheet" href="css.css">
+  </head>
+
+  <body>
+    <h1>ipynbファイルをダウンロード</h1>
+    <a href="qurious_crafting.ipynb" download="qurious_crafting.ipynb">ここからダウンロード</a>
+
+    <h1>画像認識する画像フォルダをzipファイルに圧縮し，google driveにアップロード</h1>
+    <p>
+    <ul>
+      <li>一度SDカードから本体ストレージに画像フォルダを移動し，圧縮した方が早く終わる <br></li>
+      <li>あとでzipファイルのファイル名が必要なのでコピーしておく（拡張子はいらない）</li>
+      <li>このファイルでテスト可能：<a href="test.zip">テストファイル</a></li>
+    </ul>
+    </p>
+
+    <h1>colabにアクセスし，ipynbファイルをアップロード</h1>
+    <p>
+      <a href="https://colab.research.google.com/?hl=ja">ここからcolabにアクセス</a>
+      「アップロード」を選択し，先ほどダウンロードしたqurious_crafting.ipynbファイルをアップロード
+    </p>
+
+    <h1>colab上で前処理</h1>
+    <p>
+    <ul>
+      <li>（スマホの場合は≡を押す⇒）ランタイムを選択⇒ランタイムのタイプを変更⇒ハードウェア アクセラレータのT4 GPUを選択して保存</li>
+      <li>（スマホの場合は≡を押す⇒）すべてのセルを実行</li>
+    </ul>
+    </p>
+
+    <h1>画像認識実行</h1>
+    <p>
+    <ul>
+      <li>一番下までスクロールし，画面の指示に従って画像認識を実行（表示まで時間がかかる）</li>
+      <li>画像認識が終わったらresults.zipをダウンロードし，解凍</li>
+    </ul>
+    </p>
+
+  </body>
+</html>
